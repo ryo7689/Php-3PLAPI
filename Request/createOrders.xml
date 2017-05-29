@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <extLoginData xmlns="http://www.JOI.com/schemas/ViaSub.WMS/">
+      <ThreePLKey>{ThreePLKey}</ThreePLKey>
+      <Login>{Login}</Login>
+      <Password>{Password}</Password>
+      <FacilityID>{FacilityID}</FacilityID>	  
+    </extLoginData>
+    <orders xmlns="http://www.JOI.com/schemas/ViaSub.WMS/">	
+		<Order>
+			<TransInfo>
+				<ReferenceNum>{Reference}</ReferenceNum>
+				<PONum>{POnum}</PONum>
+			</TransInfo>
+			<Notes>{Note}</Notes>
+			<ShipTo>
+				<Name>{Name}</Name>
+				<CompanyName>{CompanyName}</CompanyName>
+				<Address>
+					<Address1>{Address1}</Address1>
+					<City>{City}</City>
+					<State></State>
+					<ZIP>{ZIP}</ZIP>
+					<Country>New Zealand</Country>
+				</Address>
+			</ShipTo>
+			<ShippingInstructions>
+				<Carrier>ONLINE</Carrier>
+				<Mode>STANDARD</Mode>
+				<BillingCode>3rd PARTY</BillingCode>
+				<ShippingNotes></ShippingNotes>
+			</ShippingInstructions>
+			<OrderLineItems>
+				<OrderLineItem>
+					<SKU>{SKU}</SKU>
+					<Qty>{Qty}</Qty>
+				</OrderLineItem>
+			</OrderLineItems>		
+		</Order>
+	</orders>
+  </soap:Body>
+</soap:Envelope>
