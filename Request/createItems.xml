@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <extLoginData xmlns="http://www.JOI.com/schemas/ViaSub.WMS/">
+      <ThreePLKey>{ThreePLKey}</ThreePLKey>
+      <Login>{Login}</Login>
+      <Password>{Password}</Password>
+      <FacilityID>{FacilityID}</FacilityID>	  
+    </extLoginData>
+    <Items xmlns="http://www.JOI.com/schemas/ViaSub.WMS/">
+	  <Item>
+		<SKU>{SKU}</SKU>
+		<Description>{Description}</Description> 
+		<InventoryMethod>FIFO</InventoryMethod>
+		<UPC>123456789</UPC> 
+		<InventoryUnitOfMeasure>Each</InventoryUnitOfMeasure>
+		<LabelingUnitOfMeasure>Each</LabelingUnitOfMeasure>
+		<InventoryUnitsPerLabelingUnit>1</InventoryUnitsPerLabelingUnit>
+		<MeasurementSystem>Metric</MeasurementSystem>
+		<LabelingUnitLength>1</LabelingUnitLength>
+		<LabelingUnitWidth>1</LabelingUnitWidth>
+		<LabelingUnitHeight>1</LabelingUnitHeight>
+		<LabelingUnitWeight>1</LabelingUnitWeight>
+	  </Item>
+    </Items>
+  </soap:Body>
+</soap:Envelope>
